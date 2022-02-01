@@ -8,35 +8,6 @@ h1 {
     margin: auto;
 }
   
-#container {
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    grid-template-columns: repeat(var(--numCols), 1fr);
-    grid-template-rows: repeat(var(--numRows), 1fr);
-    width: 420px;
-    height: 420px;
-    border: black solid 3px;
-}
-
-#outerBox {
-    background-color: rgb(243, 214, 86);
-    border: black solid 8px;
-    height: 690px;
-    width: 740px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.cell {
-    background-color: rgb(212, 211, 211);
-    border: 1px solid black;
-    display: flex;
-    padding: 6px;
-}
-  
 #button-container {
     display: flex; 
     align-items: center;
@@ -50,6 +21,34 @@ h1 {
     margin: 16px;
     font-size: 24px;
     border-radius: 10px;
+}
+
+#outerBox {
+    background-color: rgb(243, 214, 86);
+    border: black solid 8px;
+    height: auto;
+    width: min-content;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+  
+#container {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: repeat(var(--numCols), 1fr);
+    grid-template-rows: repeat(var(--numRows), 1fr);
+    border: black solid 3px;
+}
+
+.cell {
+    background-color: rgb(212, 211, 211);
+    border: 1px solid black;
+    display: flex;
+    padding: 6px;
 }
   
 :root {
